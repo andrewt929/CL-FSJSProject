@@ -1,22 +1,26 @@
 {
-  "name": "chesstest",
+  "name": "fsjs-class-project",
   "version": "1.0.0",
-  "description": "play chess",
+  "description": "## Install NodeJS",
   "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.7"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andrewt929/CL-FSJSProject.git"
+    "url": "git+https://github.com/CodeLouisville/FSJS-class-project.git"
   },
-  "author": "Andrew Taylor",
+  "author": "Aaron Johnson <aarontropy@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/andrewt929/CL-FSJSProject/issues"
+    "url": "https://github.com/CodeLouisville/FSJS-class-project/issues"
   },
-  "homepage": "https://github.com/andrewt929/CL-FSJSProject#readme",
-  "dependencies": {
-    "express": "^4.16.2"
-  }
+  "homepage": "https://github.com/CodeLouisville/FSJS-class-project#readme"
 }
