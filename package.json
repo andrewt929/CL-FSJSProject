@@ -1,5 +1,5 @@
 {
-  "name": "fsjs-class-project",
+  "name": "fsjs-final-project",
   "version": "1.0.0",
   "description": "## Install NodeJS",
   "main": "index.js",
@@ -15,12 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CodeLouisville/FSJS-class-project.git"
+    "url": "git+https://github.com/andrewt929/CL-FSJSProject.git"
   },
-  "author": "Aaron Johnson <aarontropy@gmail.com>",
+  "author": "Andrew Taylor <andrewt929@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CodeLouisville/FSJS-class-project/issues"
+    "url": "https://github.com/andrewt929/CL-FSJSProject.git/issues"
   },
-  "homepage": "https://github.com/CodeLouisville/FSJS-class-project#readme"
+  "homepage": "https://github.com/andrewt929/CL-FSJSProject.git#readme"
 }
