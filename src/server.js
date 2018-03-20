@@ -5,6 +5,13 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const config = require('./config');
 const router = require('./routes');
+require('dotenv').config();
+
+// Authenticate to GoogleVison API
+let apiKey = process.env.GOOGLEAPIKEY;
+console.log(apiKey);
+
+// Authenticate to Flikr API
 
 // Load mongoose package
 const mongoose = require('mongoose');
@@ -21,26 +28,8 @@ app.use(bodyParser.json());
 app.use(express.static(publicPath));
 app.use('/api', router);
 
-
-app.listen(config.port, function() {
-  console.log(`${config.appName} is listening on port ${config.port}`);
-});
-
-// Imports the Google Cloud client library
-const vision = require('@google-cloud/vision');
-
-// Creates a client
-const client = new vision.ImageAnnotatorClient();
-
-// Performs label detection on the image file
-client
-  .labelDetection('./resources/wakeupcat.jpg')
-  .then(results => {
-    const labels = results[0].labelAnnotations;
-
-    console.log('Labels:');
-    labels.forEach(label => console.log(label.description));
-  })
-  .catch(err => {
-    console.error('ERROR:', err);
-  });
+// Create the image request
+const request = {
+  image: {source: {imageUri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/MtRushmore.jpg/1200px-MtRushmore.jpg'}},
+  features: [],
+};

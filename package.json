@@ -6,6 +6,8 @@
   "dependencies": {
     "@google-cloud/vision": "^0.16.0",
     "body-parser": "^1.18.2",
+    "curl": "^0.1.4",
+    "dotenv": "^5.0.1",
     "express": "^4.16.2",
     "mongoose": "^5.0.7"
   },

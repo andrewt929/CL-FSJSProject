@@ -1,0 +1,17 @@
+{
+    "requests": [
+      {
+        "image": {
+          "source": {
+            "imageUri": "https://raw.githubusercontent.com/karolmajek/GCP-Vision-API/master/images/kinship.jpg"
+          }
+        },
+        "features": [
+          {
+            "type": "FACE_DETECTION",
+            "maxResults": 1000
+          }
+        ]
+      }
+    ]
+  }
